@@ -451,14 +451,14 @@
         }
 
         /* Services Section */
-        .services {
+        .section {
             padding: 6rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
             position: relative;
         }
 
-        .services::before {
+        .section::before {
             content: '';
             position: absolute;
             top: 0;
@@ -486,7 +486,7 @@
 
         .section-quote {
             text-align: center;
-            font-size: 1.1rem;
+            font-size: 1rem;
             opacity: 0.7;
             margin-bottom: 4rem;
             transform: translateY(30px);
@@ -503,8 +503,8 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: .5rem;
             opacity: 0;
             transform: translateY(50px);
             transition: all 0.5s ease-in-out 0.4s;
@@ -516,7 +516,7 @@
         }
 
         .service-card {
-            height: 320px;
+            height: 400px;
             perspective: 1000px;
             cursor: pointer;
         }
@@ -592,7 +592,7 @@
         }
 
         .service-title {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: bold;
             margin-bottom: 1rem;
         }
@@ -632,7 +632,6 @@
             background: var(--primary-blue-dark);
         }
 
-        /* Footer */
         .footer {
             padding: 6rem 2rem 2rem;
             border-top: 1px solid rgba(79, 195, 247, 0.2);
@@ -664,7 +663,7 @@
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 3rem;
             margin-bottom: 3rem;
         }
@@ -816,166 +815,7 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="scroll-container">
-        <!-- Hero Section -->
-        <section class="hero snap-section" id="home">
-            <div class="hero-background"></div>
-            <div class="hero-gradient"></div>
-            <div class="hero-slider" id="heroSlider">
-                <div class="hero-slide active">
-                    <div class="hero-content">
-                        <h1 class="hero-title">Digital Excellence Redefined</h1>
-                        <p class="hero-subtitle">We craft innovative digital solutions that transform your vision into
-                            reality</p>
-                        <div class="hero-cta">
-                            <a href="#services" class="btn btn-primary">
-                                <i class="fas fa-rocket"></i>
-                                Get Started
-                            </a>
-                            <a href="#portfolio" class="btn btn-secondary">
-                                <i class="fas fa-eye"></i>
-                                View Work
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-slide">
-                    <div class="hero-content">
-                        <h1 class="hero-title">Full-Stack Development</h1>
-                        <p class="hero-subtitle">From concept to deployment, we build scalable applications with modern
-                            technologies</p>
-                        <div class="hero-cta">
-                            <a href="#services" class="btn btn-primary">
-                                <i class="fas fa-code"></i>
-                                Learn More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-slide">
-                    <div class="hero-content">
-                        <video class="hero-video" controls
-                            poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23f0f0f0'/%3E%3Ctext x='300' y='200' text-anchor='middle' fill='%23666' font-size='20' font-family='Arial'%3EDemo Video%3C/text%3E%3C/svg%3E">
-                            <source
-                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                                type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section class="services snap-section" id="services">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-quote">"Innovation distinguishes between a leader and a follower" - Steve Jobs</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-card-inner">
-                        <div class="service-card-front">
-                            <i class="fas fa-code service-icon"></i>
-                            <h3 class="service-title">Fullstack Development</h3>
-                            <p class="service-description">End-to-end web applications with modern frameworks and
-                                technologies</p>
-                        </div>
-                        <div class="service-card-back">
-                            <h3 class="service-title">Fullstack Development</h3>
-                            <p class="service-description">React, Node.js, Python, databases, and cloud deployment
-                                solutions</p>
-                            <button class="btn btn-primary" style="margin-top: 1rem;">View More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-card-inner">
-                        <div class="service-card-front">
-                            <i class="fas fa-gamepad service-icon"></i>
-                            <h3 class="service-title">Game Development</h3>
-                            <p class="service-description">Interactive games and immersive experiences across platforms
-                            </p>
-                        </div>
-                        <div class="service-card-back">
-                            <h3 class="service-title">Game Development</h3>
-                            <p class="service-description">Unity, Unreal Engine, mobile games, and web-based gaming
-                                solutions</p>
-                            <button class="btn btn-primary" style="margin-top: 1rem;">View More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-card-inner">
-                        <div class="service-card-front">
-                            <i class="fas fa-palette service-icon"></i>
-                            <h3 class="service-title">UI/UX Design</h3>
-                            <p class="service-description">Beautiful, intuitive interfaces that users love to interact
-                                with</p>
-                        </div>
-                        <div class="service-card-back">
-                            <h3 class="service-title">UI/UX Design</h3>
-                            <p class="service-description">User research, wireframing, prototyping, and responsive
-                                design systems</p>
-                            <button class="btn btn-primary" style="margin-top: 1rem;">View More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-card-inner">
-                        <div class="service-card-front">
-                            <i class="fas fa-chart-line service-icon"></i>
-                            <h3 class="service-title">Digital Strategy</h3>
-                            <p class="service-description">Data-driven strategies to grow your digital presence and
-                                business</p>
-                        </div>
-                        <div class="service-card-back">
-                            <h3 class="service-title">Digital Strategy</h3>
-                            <p class="service-description">SEO, analytics, digital marketing, and growth optimization
-                                consulting</p>
-                            <button class="btn btn-primary" style="margin-top: 1rem;">View More</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer no-snap">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Kuroragi Digital Studio</h3>
-                    <p>We are a creative digital studio specializing in web development, game creation, and innovative
-                        digital solutions. Our mission is to transform ideas into exceptional digital experiences.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <p>Email: hello@kuroragi.digital</p>
-                    <p>WhatsApp: +62 812-3456-7890</p>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Kuroragi Digital Studio. All rights reserved. | <a href="#" style="color: inherit;">Terms
-                        & Conditions</a> | <a href="#" style="color: inherit;">Privacy Policy</a></p>
-            </div>
-        </footer>
-    </main>
+    @include('main-example-3')
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop">
